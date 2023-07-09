@@ -1,0 +1,122 @@
+@import "../../../variables.scss";
+
+.organic-offer {
+  padding-inline: $spacing-inline;
+  margin-block: $spacing-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.desc {
+  margin-block-end: $m-32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vh;
+  h2 {
+    font-size: $subheading-font-size;
+    margin-block: $m-16;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      background-color: $yellow-clr;
+      width: 50px;
+    }
+    &::before {
+      left: -60px;
+    }
+    &::after {
+      right: -60px;
+    }
+  }
+  p {
+    color: $grey-clr;
+  }
+}
+
+.products-wrapper {
+  display: flex;
+  gap: $m-32;
+}
+
+.each-article {
+  flex: 1;
+  background-color: $lightgrey-clr;
+  padding: $m-48 $m-32 $m-16 $m-32;
+  figure {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    min-height: 100%;
+    gap: $m-32;
+    img {
+      height: 350px;
+      object-fit: contain;
+    }
+  }
+}
+figcaption {
+  h3 {
+    font-size: $h3-font-size;
+    font-weight: 600;
+    margin-block-end: $m-16;
+  }
+  p {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 872px) {
+  .desc {
+    width: 100%;
+  }
+  .products-wrapper {
+    gap: $m-16;
+  }
+  .each-article {
+    padding: $m-32 $m-16 $m-16 $m-16;
+    figure {
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .organic-offer {
+    padding-inline: $spacing-inline-small;
+  }
+  .products-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .desc {
+    h2 {
+      &::before,
+      &::after {
+        width: 40px;
+      }
+      &::before {
+        left: -45px;
+      }
+      &::after {
+        right: -45px;
+      }
+    }
+  }
+}

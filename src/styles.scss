@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+@import "./fonts.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $black-clr;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: $yellow-clr;
+  color: $white-clr;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $yellow-clr-hover;
+  }
+}
+
+@media (min-width: 1200px) {
+  header,
+  .hero-section,
+  .organic-offer,
+  footer {
+    padding-inline: $spacing-inline-large !important;
+  }
+}

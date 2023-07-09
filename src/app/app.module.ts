@@ -9,6 +9,7 @@ import { OfferSectionComponent } from './components/offer-section/offer-section.
 import { DeliveryProcessSectionComponent } from './components/delivery-process-section/delivery-process-section.component';
 import { TopProductsComponent } from './components/top-products/top-products.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewProductsComponent } from './components/new-products/new-products.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     OfferSectionComponent,
     DeliveryProcessSectionComponent,
     TopProductsComponent,
-    FooterComponent
+    FooterComponent,
+    NewProductsComponent
   ],
   imports: [
     BrowserModule,

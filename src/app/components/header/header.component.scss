@@ -1,0 +1,105 @@
+@import "../../../variables.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: $spacing-inline;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 175ms ease-in-out;
+}
+
+.nav-links-list {
+  display: flex;
+  align-items: center;
+  li {
+    margin-inline-start: $m-32;
+  }
+}
+
+a {
+  color: $black-clr;
+  &:hover {
+    color: $yellow-clr;
+  }
+}
+
+.logo {
+  font-size: $logo-font-size;
+  font-weight: 600;
+  span {
+    color: $yellow-clr;
+  }
+}
+
+.toggle-btn {
+  display: none;
+  background-color: transparent;
+  z-index: 11;
+}
+
+.toggle-btn {
+  rect {
+    transition: y 175ms ease-in 175ms, rotate 175ms ease-in, opacity 0ms 175ms;
+    transform-origin: center;
+  }
+  &[aria-expanded="true"] rect {
+    transition: y 175ms ease-in, rotate 175ms ease-in 175ms, opacity 0ms 175ms;
+  }
+  &[aria-expanded="true"] rect:nth-child(odd) {
+    y: 15;
+  }
+  &[aria-expanded="true"] rect:nth-child(1) {
+    rotate: 45deg;
+  }
+  &[aria-expanded="true"] rect:nth-child(3) {
+    rotate: -45deg;
+  }
+  &[aria-expanded="true"] rect:nth-child(even) {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-inline: $spacing-inline-large;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-inline: $spacing-inline-small;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    transform: translateX(232px);
+    top: 0;
+    right: 0;
+    width: 232px;
+    height: 100%;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: $white-clr;
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-block 0 0 $m-16;
+    gap: $spacing-block;
+  }
+  .nav-links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $m-32;
+  }
+  .show-nav-links {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
