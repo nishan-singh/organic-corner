@@ -45,6 +45,41 @@ img {
   }
 }
 
+.each-sec-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: $m-32;
+  h2 {
+    font-size: $subheading-font-size;
+    margin-block: $m-16;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      background-color: $yellow-clr;
+      width: 50px;
+    }
+    &::before {
+      left: -60px;
+    }
+    &::after {
+      right: -60px;
+    }
+  }
+  p {
+    color: $grey-clr;
+    max-width: 65ch;
+  }
+}
+
 @media (min-width: 1200px) {
   header,
   .hero-section,
