@@ -3,4 +3,12 @@
 .new-products-wrapper {
   padding-inline: $spacing-inline;
   text-align: center;
+  max-width: calc(100% - (2 * $spacing-inline));
+}
+
+.products-list {
+  display: flex;
+  justify-content: center;
+  gap: $m-16;
+  margin-block: $spacing-block;
 }
