@@ -4,7 +4,6 @@ type Product = {
   name: string;
   price: number;
   img: string;
-  desc: string;
 };
 @Component({
   selector: 'app-new-products',
@@ -15,27 +14,28 @@ export class NewProductsComponent {
   products: Product[] = [
     {
       name: 'Strawberries',
-      price: 4.99,
+      price: 6.99,
       img: '/assets/img/product-img/strawberries.jpg',
-      desc: 'lorem ipsum ',
     },
     {
-      name: 'Strawberries',
-      price: 4.99,
-      img: '/assets/img/product-img/strawberries.jpg',
-      desc: 'lorem ipsum ',
+      name: 'Maize',
+      price: 4.49,
+      img: '/assets/img/product-img/maize.jpg',
     },
     {
-      name: 'Strawberries',
-      price: 4.99,
-      img: '/assets/img/product-img/strawberries.jpg',
-      desc: 'lorem ipsum ',
+      name: 'Broccoli',
+      price: 9.99,
+      img: '/assets/img/product-img/broccoli.jpg',
     },
     {
-      name: 'Strawberries',
-      price: 4.99,
-      img: '/assets/img/product-img/strawberries.jpg',
-      desc: 'lorem ipsum ',
+      name: 'Paprika',
+      price: 5.99,
+      img: '/assets/img/product-img/paprika.jpg',
+    },
+    {
+      name: 'Tomatoes',
+      price: 3.99,
+      img: '/assets/img/product-img/tomatoes.jpg',
     },
   ];
 }
