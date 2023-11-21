@@ -5,104 +5,19 @@
   </section>
   <section class="products-wrapper">
     <ul class="products-list">
-      <li>
+      <li *ngFor="let eachNewProduct of products">
         <a href="">
           <figure>
             <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
+              [src]="eachNewProduct.img"
+              [alt]="eachNewProduct.name"
               width="325px"
               height="250px"
             />
             <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <figure>
-            <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <figure>
-            <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <figure>
-            <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <figure>
-            <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <figure>
-            <img
-              src="/assets/img/product-img/strawberries.jpg"
-              alt="strawberries"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>Strawberries</h3>
-              <p>Product Description</p>
-              <span>Rs. 100</span>
+              <h3>{{ eachNewProduct.name }}</h3>
+              <p>{{ eachNewProduct.desc }}</p>
+              <span>{{ eachNewProduct.price }}</span>
             </figcaption>
           </figure>
         </a>
