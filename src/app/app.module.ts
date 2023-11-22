@@ -7,7 +7,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { OfferSectionComponent } from './components/offer-section/offer-section.component';
 import { DeliveryProcessSectionComponent } from './components/delivery-process-section/delivery-process-section.component';
-import { TopProductsComponent } from './components/top-products/top-products.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewProductsComponent } from './components/new-products/new-products.component';
 
@@ -18,15 +17,11 @@ import { NewProductsComponent } from './components/new-products/new-products.com
     HeroComponent,
     OfferSectionComponent,
     DeliveryProcessSectionComponent,
-    TopProductsComponent,
     FooterComponent,
-    NewProductsComponent
+    NewProductsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
