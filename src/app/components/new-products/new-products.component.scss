@@ -14,7 +14,23 @@
   overflow: auto hidden;
 }
 
+.products-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.products-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.products-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+  border: 5px solid #f1f1f1;
+  outline: transparent;
+}
+
 li {
+  padding-block-end: $m-16;
   img {
     width: 225px;
     max-width: max-content;
