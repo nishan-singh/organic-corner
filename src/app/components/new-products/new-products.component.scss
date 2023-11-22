@@ -3,12 +3,20 @@
 .new-products-wrapper {
   padding-inline: $spacing-inline;
   text-align: center;
-  max-width: calc(100% - (2 * $spacing-inline));
 }
 
 .products-list {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: $m-16;
+  gap: $m-32;
   margin-block: $spacing-block;
+  padding-inline-end: $m-16;
+  overflow: auto hidden;
+}
+
+li {
+  img {
+    width: 225px;
+    max-width: max-content;
+  }
 }
