@@ -10,6 +10,7 @@ import { DeliveryProcessSectionComponent } from './components/delivery-process-s
 import { FooterComponent } from './components/footer/footer.component';
 import { NewProductsComponent } from './components/new-products/new-products.component';
 import { WeeklyOfferComponent } from './components/weekly-offer/weekly-offer.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { WeeklyOfferComponent } from './components/weekly-offer/weekly-offer.com
     FooterComponent,
     NewProductsComponent,
     WeeklyOfferComponent,
+    HowItWorksComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
