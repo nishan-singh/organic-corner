@@ -36,3 +36,12 @@ li {
     max-width: max-content;
   }
 }
+
+@media (max-width: 768px) {
+  .new-products-wrapper {
+    padding: $spacing-block-small $spacing-inline-small;
+  }
+  .products-list {
+    margin-block: $spacing-block-small;
+  }
+}
