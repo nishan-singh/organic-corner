@@ -85,7 +85,11 @@ img {
   header,
   .hero-section,
   .organic-offer,
+  .new-products-wrapper,
   footer {
     padding-inline: $spacing-inline-large !important;
+  }
+  .weekly-offer-sec {
+    margin-inline: $spacing-inline-large !important;
   }
 }
