@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewProductsComponent } from './components/new-products/new-products.component';
 import { WeeklyOfferComponent } from './components/weekly-offer/weekly-offer.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { BuyProductComponent } from './components/buy-product/buy-product.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
     NewProductsComponent,
     WeeklyOfferComponent,
     HowItWorksComponent,
+    BuyProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
