@@ -29,12 +29,27 @@
   outline: transparent;
 }
 
-li {
+.each-item {
   padding-block-end: $m-16;
   img {
     width: 225px;
     max-width: max-content;
   }
+  figcaption {
+    color: $black-clr;
+    text-align: left;
+    h3 {
+      font-weight: normal;
+    }
+    p {
+      font-size: 14px;
+      color: $grey-clr;
+    }
+  }
+}
+
+.each-item:last-child {
+  padding-block-end: 0;
 }
 
 @media (max-width: 768px) {

@@ -5,8 +5,8 @@
   </section>
   <section class="products-wrapper">
     <ul class="products-list">
-      <li *ngFor="let eachNewProduct of products">
-        <a href="">
+      <li *ngFor="let eachNewProduct of productsList" class="each-item">
+        <a [routerLink]="'product/' + eachNewProduct.id">
           <figure>
             <img
               [src]="eachNewProduct.img"
@@ -16,7 +16,7 @@
             />
             <figcaption>
               <h3>{{ eachNewProduct.name }}</h3>
-              <p>{{ eachNewProduct.price }}</p>
+              <p>${{ eachNewProduct.price }}</p>
             </figcaption>
           </figure>
         </a>
