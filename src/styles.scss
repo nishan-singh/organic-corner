@@ -41,8 +41,19 @@ img {
   border-radius: $btn-radius;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+  font-size: 1rem;
   &:hover {
     background-color: $yellow-clr-hover;
+  }
+}
+
+.bdr-highlight {
+  border: 1px solid $yellow-clr;
+  background-color: transparent;
+  color: $yellow-clr;
+  &:hover {
+    background-color: $yellow-clr;
+    color: $white-clr;
   }
 }
 
