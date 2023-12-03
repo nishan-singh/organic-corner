@@ -6,11 +6,12 @@ header {
   align-items: center;
   padding-inline: $spacing-inline;
   height: $header-height;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
   transition: all 175ms ease-in-out;
+  background-color: $pink-clr;
 }
 
 .nav-links-list {
