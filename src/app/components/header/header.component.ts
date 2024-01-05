@@ -7,7 +7,7 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 })
 export class HeaderComponent {
   @ViewChild('navLinks') navLinks?: ElementRef<HTMLElement>;
-  @ViewChild('header') header?: ElementRef<HTMLHeadElement>;
+  @ViewChild('header') header!: ElementRef<HTMLHeadElement>;
   hamburgerAnimation: boolean = false;
   scrollPosition: number = 0;
 
@@ -23,7 +23,7 @@ export class HeaderComponent {
       document.body.scrollTop ||
       0;
     this.scrollPosition > 72
-      ? (this.header!.nativeElement.style.backgroundColor = 'white')
-      : (this.header!.nativeElement.style.backgroundColor = '');
+      ? this.header.nativeElement.classList.add('scrolled-nav')
+      : this.header.nativeElement.classList.remove('scrolled-nav');
   }
 }

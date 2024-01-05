@@ -14,6 +14,11 @@ header {
   background-color: $pink-clr;
 }
 
+.scrolled-nav {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+}
+
 .nav-links-list {
   display: flex;
   align-items: center;
@@ -45,11 +50,17 @@ a {
 
 .toggle-btn {
   rect {
-    transition: y 175ms ease-in 175ms, rotate 175ms ease-in, opacity 0ms 175ms;
+    transition:
+      y 175ms ease-in 175ms,
+      rotate 175ms ease-in,
+      opacity 0ms 175ms;
     transform-origin: center;
   }
   &[aria-expanded="true"] rect {
-    transition: y 175ms ease-in, rotate 175ms ease-in 175ms, opacity 0ms 175ms;
+    transition:
+      y 175ms ease-in,
+      rotate 175ms ease-in 175ms,
+      opacity 0ms 175ms;
   }
   &[aria-expanded="true"] rect:nth-child(odd) {
     y: 15;
