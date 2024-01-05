@@ -5,22 +5,24 @@
   </section>
   <section class="products-wrapper">
     <ul class="products-list">
-      <li *ngFor="let eachNewProduct of productsList" class="each-item">
-        <a [routerLink]="'product/' + eachNewProduct.id">
-          <figure>
-            <img
-              [src]="eachNewProduct.img"
-              [alt]="eachNewProduct.name"
-              width="325px"
-              height="250px"
-            />
-            <figcaption>
-              <h3>{{ eachNewProduct.name }}</h3>
-              <p>${{ eachNewProduct.price }}</p>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
+      @for (eachNewProduct of productsList; track eachNewProduct.id) {
+        <li class="each-item">
+          <a [routerLink]="'product/' + eachNewProduct.id">
+            <figure>
+              <img
+                [src]="eachNewProduct.img"
+                [alt]="eachNewProduct.name"
+                width="325px"
+                height="250px"
+              />
+              <figcaption>
+                <h3>{{ eachNewProduct.name }}</h3>
+                <p>${{ eachNewProduct.price }}</p>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      }
     </ul>
   </section>
 </section>

@@ -12,7 +12,6 @@ export class NewProductsComponent {
 
   constructor(private products: ProductsService) {
     this.productsList = this.products.getProducts();
-    console.log("help...");
-
+    console.log('help...');
   }
 }
