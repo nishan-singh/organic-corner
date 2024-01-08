@@ -38,8 +38,6 @@ export class ProductsService {
     },
   ];
 
-  constructor() {}
-
   getProducts(): Product[] {
     return this.products;
   }
