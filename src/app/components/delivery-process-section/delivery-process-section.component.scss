@@ -50,6 +50,17 @@
     margin-block: $spacing-block;
     .inner-wrapper {
       padding-inline: $spacing-inline-small;
+      p {
+        backdrop-filter: blur(2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 572px) {
+  .inner-wrapper {
+    p {
+      display: none;
     }
   }
 }
