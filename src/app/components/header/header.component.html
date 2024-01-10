@@ -5,17 +5,12 @@
   <nav #navLinks>
     <ul class="nav-links-list">
       <li><a routerLink="">Home</a></li>
-      <li><a routerLink="">Products</a></li>
-      <li><a routerLink="">Top Organic</a></li>
-      <li><a routerLink="">Buy Now</a></li>
+      <li><a routerLink="" fragment="organic">Top Organic</a></li>
+      <li><a routerLink="" fragment="products">Products</a></li>
+      <li><a routerLink="" fragment="buynow">Buy Now</a></li>
     </ul>
   </nav>
-  <button
-    type="button"
-    class="toggle-btn"
-    (click)="toggleNavLinks()"
-    [attr.aria-expanded]="hamburgerAnimation"
-  >
+  <button type="button" class="toggle-btn" (click)="toggleNavLinks()" [attr.aria-expanded]="hamburgerAnimation">
     <svg width="24" height="24" viewBox="0 0 32 31" class="hamburger">
       <rect width="32" height="2.5" x="0" y="5" fill="#000" />
       <rect width="32" height="2.5" x="0" y="16" fill="#000" />
