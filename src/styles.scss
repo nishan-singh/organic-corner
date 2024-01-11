@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: $black-clr;
@@ -89,6 +94,13 @@ img {
   p {
     color: $grey-clr;
     max-width: 65ch;
+  }
+}
+
+//media queries for smooth scrolling
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
