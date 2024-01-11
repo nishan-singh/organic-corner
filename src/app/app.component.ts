@@ -11,4 +11,4 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, CommonModule, NewProductsComponent, HeaderComponent],
 })
-export class AppComponent {}
+export class AppComponent { }
