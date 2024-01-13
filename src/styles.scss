@@ -10,8 +10,8 @@
 }
 
 html {
+  scroll-padding-top: 84px;
   scroll-behavior: smooth;
-  scroll-padding-top: 200px;
 }
 
 body {
@@ -94,13 +94,6 @@ img {
   p {
     color: $grey-clr;
     max-width: 65ch;
-  }
-}
-
-//media queries for smooth scrolling
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
   }
 }
 
