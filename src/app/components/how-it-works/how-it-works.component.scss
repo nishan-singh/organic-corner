@@ -1,6 +1,21 @@
 @import "../../../variables.scss";
 
 .how-it-works-wrapper {
+  @include flex(row, center, flex-start);
   height: 425px;
+  padding: $spacing-block $spacing-inline;
   background-color: $yellow-clr;
+  color: $white-clr;
+}
+
+.how-it-works__heading {
+  @include flex(column);
+  h3 {
+    font-size: $h3-font-size;
+    font-weight: 600;
+    margin-block-end: 6px;
+  }
+  p {
+    font-style: italic;
+  }
 }
