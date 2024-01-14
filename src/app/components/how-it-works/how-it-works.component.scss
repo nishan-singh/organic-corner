@@ -1,8 +1,9 @@
 @import "../../../variables.scss";
 
 .how-it-works-wrapper {
-  @include flex(row, center, flex-start);
+  @include flex(column, flex-start, center);
   height: 425px;
+  width: 100%;
   padding: $spacing-block $spacing-inline;
   background-color: $yellow-clr;
   color: $white-clr;
@@ -17,5 +18,20 @@
   }
   p {
     font-style: italic;
+  }
+}
+
+.htw-details {
+  margin-block-start: 32px;
+  ul {
+    @include flex();
+    gap: 32px;
+    text-align: center;
+  }
+  li {
+     h4 {
+       font-size: clamp(1.25rem, 2vw, 1.5rem);
+       font-weight: 600;
+     }
   }
 }
