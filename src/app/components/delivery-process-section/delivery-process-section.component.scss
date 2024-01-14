@@ -59,6 +59,7 @@
 
 @media (max-width: 572px) {
   .inner-wrapper {
+    @include flex(column, center);
     p {
       display: none;
     }
