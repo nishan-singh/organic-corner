@@ -18,6 +18,7 @@ export class HeaderComponent {
     this.navLinks?.nativeElement.classList.toggle('show-nav-links');
     this.hamburgerAnimation = !this.hamburgerAnimation;
   }
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     this.scrollPosition =
