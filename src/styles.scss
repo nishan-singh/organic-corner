@@ -97,15 +97,16 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   header,
   .hero-section,
   .organic-offer,
   .new-products-wrapper,
+  .how-it-works-wrapper,
   footer {
-    padding-inline: $spacing-inline-large !important;
+    padding-inline: 12.5% !important;
   }
   .weekly-offer-sec {
-    margin-inline: $spacing-inline-large !important;
+    margin-inline: 12.5% !important;
   }
 }
