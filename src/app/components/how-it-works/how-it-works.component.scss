@@ -31,24 +31,21 @@
   }
   li {
     position: relative;
-    &::after {
-    content: '';
-    background-image: url('/assets/img/icons/arrows.svg');
-    background-repeat: no-repeat;
-    position:absolute;
-    top:0px;
-    left: -20%;
     width: 100%;
-    height: 36px;
+    .steps-wrapper {
+      img {
+        width: 48px;
+        height: 48px;
+      }
     }
-     h4 {
+    h4 {
        font-size: clamp(1.125rem, 1.5vw, 1.25rem);
        font-weight: 600;
        margin-block-end: 10px;
-     }
-     p {
+    }
+    p {
        font-size: .95rem;
-     }
+    }
   }
 }
 
