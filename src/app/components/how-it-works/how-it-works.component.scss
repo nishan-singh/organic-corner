@@ -49,15 +49,24 @@
   }
 }
 
-@media (max-width: 572px) {
+@media (max-width: 750px) {
   .how-it-works-wrapper {
-     height: auto;
-     padding: $spacing-block-small $spacing-inline-small;
-   }
+    height: auto;
+  }
   .htw-details {
     ul {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px 12px;
     }
   }
+}
+
+@media (max-width: 572px) {
+  .how-it-works__heading {
+    text-align: center;
+  }
+  .how-it-works-wrapper {
+     height: auto;
+     padding: $spacing-block-small $spacing-inline-small;
+   }
 }
