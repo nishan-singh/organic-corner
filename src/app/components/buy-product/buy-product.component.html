@@ -1,3 +1,13 @@
 <section class="buy-product">
-  <h1>Under Construction</h1>
+  @if (productsDetails) {
+    <div class="image-container">
+      <img src="{{ productsDetails.img }}" alt="{{ productsDetails.name }}" />
+    </div>
+    <div class="details-container">
+      <h2>{{ productsDetails.name }}</h2>
+      <!-- <p>{{ productsDetails.description }}</p> -->
+      <p>{{ productsDetails.price }}</p>
+      <!-- <button (click)="buyProduct()">Buy</button> -->
+    </div>
+  }
 </section>
