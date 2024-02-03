@@ -5,9 +5,9 @@
     </div>
     <div class="details-container">
       <h2>{{ productsDetails.name }}</h2>
-      <!-- <p>{{ productsDetails.description }}</p> -->
       <p>{{ productsDetails.price }}</p>
-      <!-- <button (click)="buyProduct()">Buy</button> -->
     </div>
+  } @else {
+    <p>No product found</p>
   }
 </section>
