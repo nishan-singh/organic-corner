@@ -6,3 +6,14 @@
   padding: $spacing-block $spacing-inline;
   gap: 2em;
 }
+
+.fallback-wrapper {
+  margin-block: $spacing-block;
+  .fallback-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+}

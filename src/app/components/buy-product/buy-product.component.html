@@ -1,5 +1,5 @@
-<section class="buy-product">
-  @if (productsDetails) {
+@if (productsDetails) {
+  <section class="buy-product">
     <div class="image-container">
       <img src="{{ productsDetails.img }}" alt="{{ productsDetails.name }}" />
     </div>
@@ -7,7 +7,9 @@
       <h2>{{ productsDetails.name }}</h2>
       <p>{{ productsDetails.price }}</p>
     </div>
-  } @else {
-    <p>No product found</p>
-  }
-</section>
+  </section>
+} @else {
+  <section class="fallback-wrapper">
+    <h2 class="fallback-text">No product found</h2>
+  </section>
+}
