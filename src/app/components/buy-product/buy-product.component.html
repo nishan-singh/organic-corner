@@ -5,7 +5,12 @@
     </div>
     <div class="details-container">
       <h2>{{ productsDetails.name }}</h2>
-      <p>{{ productsDetails.price | currency: 'EUR'}}</p>
+      <p>{{ productsDetails.price | currency: "EUR" }}</p>
+      <ul>
+        @for (detail of details; track detail) {
+          <li>{{ detail }}</li>
+        }
+      </ul>
     </div>
   </section>
 } @else {
