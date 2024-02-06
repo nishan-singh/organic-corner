@@ -5,7 +5,7 @@
     </div>
     <div class="details-container">
       <h2>{{ productsDetails.name }}</h2>
-      <p>{{ productsDetails.price }}</p>
+      <p>{{ productsDetails.price | currency: 'EUR'}}</p>
     </div>
   </section>
 } @else {
