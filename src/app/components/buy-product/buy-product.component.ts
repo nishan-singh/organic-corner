@@ -13,6 +13,7 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class BuyProductComponent {
   productsDetails?: Product;
+  details = ["Fresh Fruits", "Organic", "Regional"];
 
   constructor(
     private route: ActivatedRoute,
