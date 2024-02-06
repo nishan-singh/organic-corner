@@ -5,6 +5,12 @@
   grid-template-columns: repeat(2, 1fr);
   padding: $spacing-block $spacing-inline;
   gap: 2em;
+  h2 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 .fallback-wrapper {
