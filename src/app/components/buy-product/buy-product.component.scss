@@ -5,6 +5,18 @@
   grid-template-columns: repeat(2, 1fr);
   padding: $spacing-block $spacing-inline;
   gap: 2em;
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+  }
+  ul {
+    list-style: square;
+    list-style-position: inside;
+    li {
+      margin-bottom: 5px;
+    }
+  }
   h2 {
     font-weight: 600;
   }
