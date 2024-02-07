@@ -4,7 +4,7 @@
     <p>Every day fresh and quality products for you</p>
   </section>
   <section class="products-wrapper">
-    @defer (on idle) {
+    @defer {
       <ul class="products-list">
         @for (eachNewProduct of productsList; track eachNewProduct.id) {
           <li class="each-item">
