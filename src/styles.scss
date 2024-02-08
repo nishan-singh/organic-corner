@@ -27,9 +27,14 @@ ul {
   list-style: none;
 }
 
-button {
+button, input {
   border: transparent;
   outline: transparent;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: transparent;
   cursor: pointer;
 }
 
