@@ -14,6 +14,7 @@ import { ProductsService } from 'src/app/services/products.service';
 export class BuyProductComponent {
   productsDetails?: Product;
   details = ["Fresh Fruits", "Organic", "Regional"];
+  itemsQuantity = 1;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,5 +23,15 @@ export class BuyProductComponent {
     const id = Number(this.route.snapshot.params['id']);
     this.productsDetails = this.productsService.getProductDetailsById(id);
     console.log(this.productsDetails);
+  }
+
+  decreaseQuantity() {
+    if(this.itemsQuantity > 1) {
+      this.itemsQuantity--;
+    }
+  }
+
+  increaseQuantity() {
+    this.itemsQuantity++;
   }
 }
